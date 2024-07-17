@@ -98,13 +98,13 @@ export const InfiniteMovingCards = ({
             <blockquote>
               <div
                 aria-hidden="true"
-                className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
+                className=" user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
               ></div>
-              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal">
-                {item.quote}
+              <span className=" relative z-20 text-sm md:text-lg leading-[1.6] text-white font-normal text-center">
+                &#34;{item.quote}&#34;
               </span>
               <div className="relative z-20 mt-6 flex flex-row items-center">
-                <span className="flex flex-col gap-1">
+                <span className="flex flex-col w-full justify-center gap-1">
                   <div className="me-3">
                     <img src="/profile.svg" alt="profile" />
                   </div>

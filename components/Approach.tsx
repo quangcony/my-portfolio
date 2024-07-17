@@ -8,13 +8,13 @@ const Approach = () => {
   return (
     <section className="w-full py-20">
       <h1 className="heading">
-        My <span className="text-purple">approach</span>
+        My <span className="text-green">approach</span>
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning & Strategy"
+          title="Client Collaboration"
           icon={<AceternityIcon order={"Phase 1"} />}
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, quas. Aperiam, corrupti ut. Obcaecati odit quam soluta impedit id quae quo, tenetur voluptas quisquam quia, error asperiores expedita! Ullam, minima."
+          description="I believe in a collaborative approach where client input is valued throughout the entire process. By understanding your vision and goals, I ensure that every project is tailored to meet your specific needs."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -22,9 +22,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Nisha is Munni"
+          title="Innovative Solutions"
           icon={<AceternityIcon order={"Phase 2"} />}
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, quas. Aperiam, corrupti ut."
+          description="My approach emphasizes innovation and creativity. I strive to deliver solutions that are not only functional but also push boundaries and exceed expectations in terms of design and user experience."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,9 +37,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Munni is Aditi"
+          title="Attention to Detail"
           icon={<AceternityIcon order={"Phase 3"} />}
-          description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum, quas. Aperiam, corrupti ut."
+          description="I pay meticulous attention to detail at every stage of development. From initial concept to final implementation, I ensure that every element is carefully crafted to deliver a polished end product that stands out in the digital landscape."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -112,7 +112,7 @@ const AceternityIcon = ({ order }: { order: string }) => {
     <div>
       <button className="relative inline-flex h-12 overflow-hidden rounded-full p-[1px] focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50">
         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-purple backdrop-blur-3xl text-2xl font-bold">
+        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-5 py-2 text-green backdrop-blur-3xl text-2xl font-bold">
           {order}
         </span>
       </button>

@@ -26,13 +26,9 @@ const config = {
       },
     },
     extend: {
-      // backdropBlur: {
-      //   '3xl': {
-      //     '-webkit-backdrop-filter': 'blur(64px)',
-      //     '--tw-backdrop-blur': 'blur(64px)',
-      //     'backdrop-filter': 'var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)'
-      //   }
-      // },
+      fontFamily: {
+        bodoni: '"Bodoni Moda SC", serif'
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -48,6 +44,7 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
+        green: "#22a6b3",
         purple: "#CBACF9",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

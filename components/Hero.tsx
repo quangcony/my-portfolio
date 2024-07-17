@@ -5,6 +5,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
 import { useRouter } from "next/navigation";
+import { Lamp } from "./ui/Lamp";
 
 const Hero = () => {
   const router = useRouter();
@@ -15,7 +16,7 @@ const Hero = () => {
 
   return (
     <div className="pb-20 pt-24 md:pt-36">
-      <div>
+      {/* <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
           fill="white"
@@ -25,28 +26,32 @@ const Hero = () => {
           fill="purple"
         />
         <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+      </div> */}
+
+      <div className="absolute -top-32 left-[50%] translate-x-[-50%] z-10 w-full">
+        <Lamp />
       </div>
 
-      <div className="h-[50rem] w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+      {/* <div className="h-[50rem] w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.03] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
-      </div>
+      </div> */}
 
       <div className="flex justify-center relative my-20 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h2 className="uppercase tracking-widest text-sx text-center text-blue-100 max-w-80">
-            Dynamic Web Magic With Next.js
+            Fullstack Web Developer
           </h2>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words={"Tranforming Concepts Into Seamless User Experiences"}
+            words={"Transforming ideas into interactive realities"}
           />
           <p className="text-center md:tracking-widest mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi, I&apos;m Quang. A Next.js Developer based in Vietnam
+            Creating innovative, user-friendly web solutions.
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Explore Me"
               position="right"
               icon={<FaLocationArrow />}
               handleClick={handleClick}
